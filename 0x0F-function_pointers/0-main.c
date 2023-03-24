@@ -36,4 +36,4 @@ void print_name_uppercase(char *name)
         }
         i++;
     }
-}}
+}
