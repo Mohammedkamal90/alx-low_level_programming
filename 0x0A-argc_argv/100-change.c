@@ -2,9 +2,9 @@
 #include <stdlib.h>
 /**
  *main-prints the minimum number of coins
- *to make change for an amount of money.
- *@argc:number of command line arguments.
- *@argv:pointer to an array of command line arguments. 
+ *make change for an amount of money.
+ *@argc:number of command line arguments
+ *@argv:pointer to an array of command line arguments
  *Rerurn:0-success, non-zero-fail.
 */
 
@@ -13,9 +13,9 @@ int main(int argc, char *argv[])
 	if (argc == 2)
 	{
 	int i, leasrcents = 0, money = atoi(argv[1]);
-	int cents[] = {25, 10,5, 2, 1};
+	int cents[] = {25, 10, 5, 2, 1};
 
-	for (i =0; i < 5; i++
+	for (i = 0; i < 5; i++
 	{
 		if (money >= cents[i])
 		{
@@ -35,4 +35,4 @@ else
 	return (1);
 }
 	return(0);
-} 
+}
