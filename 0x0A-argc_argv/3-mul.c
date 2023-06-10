@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * main-print sum of arguments
@@ -8,19 +8,59 @@
  * Return:0-success
  */
 
-int main(int argcm char *argv[])
+int _atoi(char *s)
 {
-	int sum;
+	int i, d, n, len, f, digit;
 
-	if (argc == 3)
+	i = 0;
+	d = 0;
+	n = 0;
+	len = 0;
+	f = 0;
+	digit = 0;
+
+	while (s[len] != '\0')
+		len++;
+
+	while (i < len && f == 0)
 	{
-		sum - atoi(argv[1]) * atoi(argv[2]);
-		printf("%d\n", sum);
+		if (s[i] == '-')
+			++d;
+
+		if (s[i] >= '0' && s[i] <= '9')
+		{
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
+				break;
+			f = 0;
+		}
+		i++;
 	}
-	else
+
+	if (f == 0)
+		return (0);
+
+	return (n);
+}
+int main(int argc, char *argv[])
+{
+	int result, num1, num2;
+
+	if (argc < 3 || argc > 3)
 	{
-		printf("Error\m");
+		printf("Error\n");
 		return (1);
 	}
+
+	num1 = _atoi(argv[1]);
+	num2 = _atoi(argv[2]);
+	result = num1 * num2;
+
+	printf("%d\n", result);
+
 	return (0);
 }
