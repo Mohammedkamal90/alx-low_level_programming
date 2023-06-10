@@ -5,9 +5,9 @@
  * main - prints all arguments it receives
  * @argc: number of command line arguments
  * @argv: pointer to array of arguments
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
- 
+
 int main(int argc, char *argv[])
 
 {
@@ -22,5 +22,4 @@ printf("%s\n", argv[i]);
 
 }
 return (0);
-
 }
