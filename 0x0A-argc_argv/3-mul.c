@@ -22,5 +22,5 @@ int main(int argcm char *argv[])
 		printf("Error\m");
 		return (1);
 	}
-	return(0);
+	return (0);
 }
