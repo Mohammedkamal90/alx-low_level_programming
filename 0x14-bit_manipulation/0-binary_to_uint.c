@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * binary_uint - convert bin number to unsign int
+ * binary_to_uint - convert bin number to unsign int
  * @b: string containing bin number
  * Return: converted num
  */
-unsigned int binary_uint(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	int i;
 	unsigned int dec_val = 0;
