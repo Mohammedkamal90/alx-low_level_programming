@@ -1,10 +1,9 @@
 #include "m.h"
 
 /**
- * main - entry Point
- * Return: always
+ * main - entry point
+ * Return: Always
  */
-
 int main(void)
 {
 	print_school();

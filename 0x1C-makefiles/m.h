@@ -6,5 +6,4 @@
 
 void print_school(void);
 
-
 #endif
