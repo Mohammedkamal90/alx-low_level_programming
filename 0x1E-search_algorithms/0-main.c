@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../search_algos.h"
+#include "search_algos.h"
 
 /**
- * main - entry point
+ * main - entry Point
  * Return: always EXIT_SUCCESS
  */
 int main(void)
