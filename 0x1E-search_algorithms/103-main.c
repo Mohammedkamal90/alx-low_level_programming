@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../search_algos.h"
+#include "search_algos.h"
 
 /**
- * main - entry Point
- * Return: always EXIT_SUCCESS
+ * main - entry point
+ * Return: Always EXIT_SUCCESS
  */
 int main(void)
 {
